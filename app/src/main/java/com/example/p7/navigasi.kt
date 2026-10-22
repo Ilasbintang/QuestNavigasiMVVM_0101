@@ -9,7 +9,10 @@ import androidx.navigation.compose.rememberNavController
 import com.example.p7.view.FormIsian
 import com.example.p7.view.TampilData
 
-
+enum class Navigasi {
+    FormulirSaya,
+    Detail
+}
 
 
 
