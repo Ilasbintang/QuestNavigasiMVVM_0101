@@ -22,5 +22,13 @@ fun DataApp(
         navController = navController,
         startDestination = Navigasi.FormulirSaya.name
     ) {
+        composable(route = Navigasi.FormulirSaya.name) {
+            FormIsian(
+                // PERBAIKAN: Ubah menjadi 'onSubmitDictClick' / 'onSubmitBtnClick' (huruf kecil di awal)
+                onSubmitBtnClick = {
+                    navController.navigate(Navigasi.Detail.name)
+                }
+            )
+        }
 
 
