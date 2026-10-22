@@ -40,3 +40,9 @@ fun DataApp(
     }
 }
 
+private fun cancelAndBackToFormulir(
+    navController: NavHostController
+) {
+    // PERBAIKAN: Cukup gunakan popBackStack() standar untuk kembali ke halaman sebelumnya dengan aman
+    navController.popBackStack()
+}
